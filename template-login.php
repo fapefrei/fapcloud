@@ -12,17 +12,17 @@ if(isset($_SESSION['pseudo'])){
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 <head>
     <meta charset="UTF-8">
-    <title>Square Cloud / Login</title>
+    <title>Fap Cloud / Login</title>
     <!--  META  -->
     <meta name="Author" content="Loris"/>
     <meta name="description" content="Validez toutes vos matières." />
     <meta name="keywords" content="efrei, efrei doc, documents, moodle, extranet efrei, DE, devoirs écrit, examens, ingénieur" />
-    <meta name="copyright" content="Square Cloud Inc." />
+    <meta name="copyright" content="Fap Cloud Inc." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/layout/favicon.ico" />
     <link rel="apple-touch-icon" href="images/layout/touch-icon.png">
@@ -84,7 +84,7 @@ test_cookie();
     <div class="modal">
         <div class="text-container">
             <p class="title">Se souvenir de moi</p>
-            <p class="explications">Si vous cochez la case Se souvenir de moi, vous serez automatiquement connecté à Square Cloud lors de votre prochaine visite. Décochez cette option si vous ne voulez pas que d'autres personnes puissent accéder à votre compte (si, par exemple, vous utilisez un ordinateur public). Assurez-vous de bien quitter votre navigateur après vous être déconnecté de votre compte.</p>
+            <p class="explications">Si vous cochez la case Se souvenir de moi, vous serez automatiquement connecté à Fap Cloud lors de votre prochaine visite. Décochez cette option si vous ne voulez pas que d'autres personnes puissent accéder à votre compte (si, par exemple, vous utilisez un ordinateur public). Assurez-vous de bien quitter votre navigateur après vous être déconnecté de votre compte.</p>
         </div>
         <div class="modal-buttons">
             <a class="" id="close" title="">OK</a>
@@ -97,7 +97,7 @@ test_cookie();
     <p></p>
 </div>
 
-<footer class="footer-login">©<?= date('Y'); ?> Square Cloud.<br> <?= get_signature(); ?></footer>
+<footer class="footer-login">©<?= date('Y'); ?> Fap Cloud.<br> <?= get_signature(); ?></footer>
 
 <?php get_footer(); ?>
 

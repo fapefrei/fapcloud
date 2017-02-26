@@ -2,7 +2,7 @@
 if(!isset($_SESSION)) session_start();
 
 /* ==========================================================================
-    FUNCTION PRINCIPALE TIMELINE | © SQUARE CLOUD
+    FUNCTION PRINCIPALE TIMELINE | © Fap Cloud
 /* ========================================================================== */
 
 // if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' ){
@@ -221,7 +221,7 @@ if(!isset($_SESSION)) session_start();
 
 
 /* ==========================================================================
-    FUNCTIONS SECONDAIRES TIMELINE | © SQUARE CLOUD
+    FUNCTIONS SECONDAIRES TIMELINE | © Fap Cloud
 /* ========================================================================== */
 
 

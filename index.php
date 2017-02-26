@@ -2,17 +2,17 @@
 <html lang="fr">
 <!-- J'avais 5 minutes dispo pendant ma pause déjeuner donc j'ai codé cette page. -->
 
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 <head>
     <meta charset="UTF-8">
-    <title>SIEL — Système d'Information En Ligne | Square Cloud</title>
+    <title>SIEL — Système d'Information En Ligne | Fap Cloud</title>
     <!--  META  -->
     <meta name="Author" content="Loris"/>
     <meta name="description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
     <meta name="keywords" content="efrei, DE, devoirs écrit, examens, ingénieur" />
-    <meta name="copyright" content="© Square Cloud Inc." />
+    <meta name="copyright" content="© Fap Cloud Inc." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico" />
     <!--  iOS  -->
@@ -24,7 +24,7 @@ port this file to another platform without the owner's written consent. -->
     <!--  TWITTER  -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@lorismrtnl" />
-    <meta name="twitter:title" content="Système d'Information en Ligne | Square Cloud" />
+    <meta name="twitter:title" content="Système d'Information en Ligne | Fap Cloud" />
     <meta name="twitter:description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
     <meta name="twitter:image" content="https://squarecloud.fr/" />
 </head>

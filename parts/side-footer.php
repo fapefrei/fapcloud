@@ -1,5 +1,5 @@
 <div class="card footer-card">
-    <p class="copyright">© Square Cloud - Perché depuis 2014<br/>A website by Square Inc.</p>
+    <p class="copyright">© Fap Cloud - Perché depuis 2014<br/>A website by FapInc.</p>
     <p class="signature"><?= get_signature(); ?></p>
     <br/>
     <a class="linked" href="/about">À Propos</a>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 <head>
     <meta charset="UTF-8">
-    <title>Politique de confidentialité / Square Cloud</title>
+    <title>Politique de confidentialité / Fap Cloud</title>
     <!--  META  -->
     <meta name="Author" content="Loris"/>
     <!-- <meta name="description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." /> -->
     <!-- <meta name="keywords" content="efrei, DE, devoirs écrit, examens, ingénieur" /> -->
-    <meta name="copyright" content="© Square Cloud Inc." />
+    <meta name="copyright" content="© Fap Cloud Inc." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/layout/favicon.ico" />
     <!--  iOS  -->
@@ -27,7 +27,7 @@ port this file to another platform without the owner's written consent. -->
     <!--  TWITTER  -->
 <!--     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@lorismrtnl" />
-    <meta name="twitter:title" content="Système d'Information en Ligne | Square Cloud" />
+    <meta name="twitter:title" content="Système d'Information en Ligne | Fap Cloud" />
     <meta name="twitter:description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
     <meta name="twitter:image" content="https://squarecloud.fr/" /> -->
 </head>
@@ -42,7 +42,7 @@ port this file to another platform without the owner's written consent. -->
             <h1>Politique de confidentialité</h1>
             <p>Date de la dernière modification : 1 décembre 2016</p>
             <div class="fondamentale">
-                <p>Cette Déclaration de confidentialité explique nos pratiques concernant la collecte, l'utilisation et la divulgation de certaines données, y compris vos données personnelles, par la société Square Inc. (« Square Cloud »).</p>
+                <p>Cette Déclaration de confidentialité explique nos pratiques concernant la collecte, l'utilisation et la divulgation de certaines données, y compris vos données personnelles, par la société FapInc. (« Fap Cloud »).</p>
             </div>
             <h2>Les données que nous collectons</h2>
             <p>Nous collectons deux catégories d'informations principales :</p>
@@ -53,7 +53,7 @@ port this file to another platform without the owner's written consent. -->
             <br/>
             <p>Voici un peu plus d'explications sur chacune de ces catégories.</p>
             <br/>
-            <p><strong>• Les données que vous choisissez de nous communiquer.</strong> Lorsque vous utilisez nos services, nous collectons les données que vous choisissez de partager avec nous. Par exemple, pour accéder à la plupart de nos services, vous devez créer un compte Square Cloud. Nous devons ainsi collecter quelques informations importantes vous concernant, comme par exemple: un nom d'utilisateur unique que vous souhaitez utiliser, un mot de passe, une adresse e-mail, un nom et votre promotion. Bien entendu, vous nous fournissez également toutes les données que vous envoyez via nos services, tels que les fichiers et les status. Souvenez-vous que les utilisateurs auxquels vous envoyez ces données, ou tout autre contenu peuvent sauvegarder ce contenu ou le copier en dehors dents services. Sur Internet il convient de faire preuve de bon sens et cela s'applique également sur Square Cloud : n'envoyez pas de messages ou ne partagez pas de contenu que vous ne voudriez pas que quelqu'un d'autre puisse enregistrer ou partager.
+            <p><strong>• Les données que vous choisissez de nous communiquer.</strong> Lorsque vous utilisez nos services, nous collectons les données que vous choisissez de partager avec nous. Par exemple, pour accéder à la plupart de nos services, vous devez créer un compte Fap Cloud. Nous devons ainsi collecter quelques informations importantes vous concernant, comme par exemple: un nom d'utilisateur unique que vous souhaitez utiliser, un mot de passe, une adresse e-mail, un nom et votre promotion. Bien entendu, vous nous fournissez également toutes les données que vous envoyez via nos services, tels que les fichiers et les status. Souvenez-vous que les utilisateurs auxquels vous envoyez ces données, ou tout autre contenu peuvent sauvegarder ce contenu ou le copier en dehors dents services. Sur Internet il convient de faire preuve de bon sens et cela s'applique également sur Fap Cloud : n'envoyez pas de messages ou ne partagez pas de contenu que vous ne voudriez pas que quelqu'un d'autre puisse enregistrer ou partager.
             Cela peut sembler évident mais sachez que lorsque vous contactez l'Assistance ou communiquez avec nous de toute autre façon, nous collectons les informations que vous voulez bien nous communiquer.</p>
             <br/>
             <p><strong>• Les données que nous obtenons lorsque vous utilisez nos services.</strong> Lorsque vous utilisez nos services, nous collectons des données sur les types de services que vous avez utilisés et la manière dont vous les avez utilisés. Par exemple, nous pouvons savoir que vous avez téléchargé ou visionné un document en particulier. Voici une explication plus complète des types de données que nous collectons lorsque vous utilisez nos services</p>

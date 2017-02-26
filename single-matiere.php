@@ -36,18 +36,18 @@ if(!isset($_GET["subject"]) || ($_GET["subject"] == "")  ){
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 
 <head>
     <meta charset="UTF-8">
-    <title><?= $args['name']; ?> | Square Cloud</title>
+    <title><?= $args['name']; ?> | Fap Cloud</title>
     <!--  META  -->
     <meta name="Author" content="Loris"/>
     <meta name="description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
     <meta name="keywords" content="efrei, DE, devoirs écrit, examens, ingénieur" />
-    <meta name="copyright" content="© Square Cloud Inc." />
+    <meta name="copyright" content="© Fap Cloud Inc." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/layout/favicon.ico" />
     <link rel="apple-touch-icon" href="../images/layout/touch-icon.png">

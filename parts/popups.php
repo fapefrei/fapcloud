@@ -111,7 +111,7 @@
             <a id="valide" class="button">OK</a>
         </div>
         <div class="action-view-content">
-            <p class="explications">Donnez votre avis sur Square Cloud 3.0.</p>
+            <p class="explications">Donnez votre avis sur Fap Cloud 3.0.</p>
             <form method="post" action="/">
                 <textarea class="input" name="text" placeholder=""></textarea>
             </form>
@@ -127,7 +127,7 @@
             <a id="close" class="button">Annuler</a>
         </div>
         <div class="action-view-content">
-        <p class="explications">Si quelque chose ne fonctionne pas sur Square Cloud, utilisez le formulaire ci-dessous pour nous en informer.</p>
+        <p class="explications">Si quelque chose ne fonctionne pas sur Fap Cloud, utilisez le formulaire ci-dessous pour nous en informer.</p>
             <form id="form-signaler" class="form" method="post" action="/">
                 <div class="select">
                     <select required class="input" name="type">

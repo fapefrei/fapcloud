@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Square Cloud | Dashboard</title>
+    <title>Fap Cloud | Dashboard</title>
     <meta name="Author" content=""/>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
@@ -11,10 +11,10 @@
     
     <div class="loader">
         <div class="l"></div>
-        <p>Square Cloud Dashboard 10.3-A</p>
+        <p>Fap Cloud Dashboard 10.3-A</p>
     </div>
     <div class="top-panel">
-        <p class="title-panel" data-title="square cloud">website status</p><p class="subtitle-panel">DASHBOARD 10.3-A</p>
+        <p class="title-panel" data-title="Fap Cloud">website status</p><p class="subtitle-panel">DASHBOARD 10.3-A</p>
     </div>
     
     <div class="panel">

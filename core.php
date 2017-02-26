@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Square Cloud | Core</title>
+        <title>Fap Cloud | Core</title>
         <meta name="Author" content=""/>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
     </head>

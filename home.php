@@ -14,8 +14,8 @@ if(strpos($actual_link, 'php') == true){
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 <!-- TIGER, tiger, burning bright
 In the forests of the night,     
@@ -23,10 +23,10 @@ What immortal hand or eye
 Could frame thy fearful symmetry? -->
     <head>
         <meta charset="UTF-8">
-        <title>Square Cloud | A plateform designed for Efrei's students</title>
+        <title>Fap Cloud | A plateform designed for Efrei's students</title>
         <meta name="Author" content="Loris"/>
         <meta name="keywords" content="efrei, efrei doc, documents, moodle, extranet efrei, DE, devoirs écrit, examens, ingénieur" />
-        <meta name="copyright" content="Square Cloud Inc." />
+        <meta name="copyright" content="Fap Cloud Inc." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/layout/favicon.ico" />
         <link rel="apple-touch-icon" href="images/layout/touch-icon.png">
@@ -45,7 +45,7 @@ Could frame thy fearful symmetry? -->
         </nav>
     <header>
         <h2>A plateform designed for Group Efrei's students</h2>
-        <h3><em id="number">1</em> documents are on square cloud.</h3>
+        <h3><em id="number">1</em> documents are on Fap Cloud.</h3>
         <a href="#arrow" id="arrow"><img src="https://www.snapchat.com/static/style-guide/home/images/caret.svg" ></a>
 
 <!--         <div class="parallax">
@@ -82,7 +82,7 @@ Could frame thy fearful symmetry? -->
                 <div class="textes">
                     <p class="eyebrow">courses files</p>
                     <p class="title">Add <b>your</b> documents</p>
-                    <p class="description">You have the document that everyone is looking for ? The only copy of the Quantum physics DE ? <br>You can add it to the Square Cloud database in just a click ! Keep an eye on the downloads and the number of people you reached, thanks to new statistics.<br>The best part is that your document will still be avalaible for next year's students.</p>
+                    <p class="description">You have the document that everyone is looking for ? The only copy of the Quantum physics DE ? <br>You can add it to the Fap Cloud database in just a click ! Keep an eye on the downloads and the number of people you reached, thanks to new statistics.<br>The best part is that your document will still be avalaible for next year's students.</p>
                 </div>
             </div>
             <div class="right centered">
@@ -106,7 +106,7 @@ Could frame thy fearful symmetry? -->
                 <div class="textes">
                     <p class="eyebrow">efficiency</p>
                     <p class="title">Custom coded</p>
-                    <p class="description">Everything is said in the title. On a more serious note, we do not use any CMS or pre-made CSS to build Square Cloud. Everything is made by hand with love (and coffee).</p>
+                    <p class="description">Everything is said in the title. On a more serious note, we do not use any CMS or pre-made CSS to build Fap Cloud. Everything is made by hand with love (and coffee).</p>
                 </div>
             </div>
             <div class="right centered">
@@ -130,7 +130,7 @@ Could frame thy fearful symmetry? -->
         <h3>New in version 3!</h3>
             <ul class="feature-list">
                 <li id="ui"><h4>New UI</h4> Designed impeccably to look great on your browser.</li>
-                <li id="responsive"><h4>Mobile</h4> Square Cloud now works even better on your iPad and your iPhone.</li>
+                <li id="responsive"><h4>Mobile</h4> Fap Cloud now works even better on your iPad and your iPhone.</li>
                 <li id="hashtag"><h4>New Timeline</h4> Discover popular trends and files.</li>
                 <li id="sync"><h4>Ajax</h4> Every feature has been rewritten using Ajax for a better user experience.</li>
                 <li id="fix"><h4>Lots More</h4> Incredible fixes around every corner.</li>
@@ -138,7 +138,7 @@ Could frame thy fearful symmetry? -->
             </ul>
         </section>
         <section>
-            <h3>What is Square Cloud?</h3>
+            <h3>What is Fap Cloud?</h3>
             <p class="text">It’s the best <em>document exchange platform</em> for Efrei, ever. Probably because it's not made by them. It’s elegant, powerful, and always ready.</p>
         </section>
     </div>
@@ -152,9 +152,9 @@ Could frame thy fearful symmetry? -->
         <div class="home-footer-container">
             <i class="icon-noun-fin-de-liste"></i>
             <div class="texte">
-                <p>Square Cloud 2014-<?= date("Y"); ?>.</p>
-                <p>A website by Square Inc.</p>
-                <p>Square Cloud™ is a registered trademark of Square Inc.<br/>Mentioned companies names and logos are property of their respective owners.<br/>Your use of any information or materials on this website is entirely at your own risk.</p>
+                <p>Fap Cloud 2014-<?= date("Y"); ?>.</p>
+                <p>A website by FapInc.</p>
+                <p>Fap Cloud™ is a registered trademark of FapInc.<br/>Mentioned companies names and logos are property of their respective owners.<br/>Your use of any information or materials on this website is entirely at your own risk.</p>
             </div>
         </div>
     </footer>
@@ -164,7 +164,7 @@ Could frame thy fearful symmetry? -->
         <div class="modal">
             <div class="text-container">
                 <p class="title">Connexion impossible</p>
-                <p class="explications">Square cloud est actuellement fermé.<br/>Allez trainer sur Facebook en attendant.</p>
+                <p class="explications">Fap Cloud est actuellement fermé.<br/>Allez trainer sur Facebook en attendant.</p>
             </div>
             <div class="modal-buttons">
                 <a id="close" href="http://facebook.com" title="">OK</a>

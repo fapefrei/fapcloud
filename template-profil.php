@@ -61,17 +61,17 @@ if ($result->num_rows > 0) {
 <?php redirect(); ?>
 <!DOCTYPE html>
 <html lang="fr">
-<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
-or any part thereof, and is subject to the Square Cloud Terms and Conditions. You may not
+<!-- IMPORTANT NOTE: This file is licensed only for use in providing the Fap Cloud service,
+or any part thereof, and is subject to the Fap Cloud Terms and Conditions. You may not
 port this file to another platform without the owner's written consent. --> 
 <head>
     <meta charset="UTF-8">
-    <title><?= ucfirst($name).' (@'.$pseudo.')';?> | Square Cloud</title>
+    <title><?= ucfirst($name).' (@'.$pseudo.')';?> | Fap Cloud</title>
     <!--  META  -->
     <meta name="Author" content="Loris"/>
     <meta name="description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
     <meta name="keywords" content="efrei, DE, devoirs écrit, examens, ingénieur" />
-    <meta name="copyright" content="© Square Cloud Inc." />
+    <meta name="copyright" content="© Fap Cloud Inc." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/layout/favicon.ico" />
     <link rel="apple-touch-icon" href="../images/layout/touch-icon.png">
@@ -140,7 +140,7 @@ port this file to another platform without the owner's written consent. -->
                             <p class="data"><?= $name.' '. $lastname ?></p>
                         </div>
                         <div class="bottom-list">
-                            <p class="caption">Un aperçu des informations de votre compte Square Cloud.</p>
+                            <p class="caption">Un aperçu des informations de votre compte Fap Cloud.</p>
                             <p style="text-transform: capitalize;">Prénom : <b><?= $name .'</b> Nom : <b>'. $lastname; ?></b></p>
                             <p>Nom d'utilisateur : <b>@<?= $usr; ?></b></p>
                             <?php if($promo == 'M1'){ $majeure = 'Majeure :';} ?>
@@ -199,7 +199,7 @@ port this file to another platform without the owner's written consent. -->
                             <p class="data"><?=  (isset($_COOKIE['AUTH']) ? 'Oui' : 'Non'); ?></p>
                         </div>
                         <div class="bottom-list">
-                            <p class="caption">La fonction connexion automatique vous permet de rester connecté sur Square Cloud sans avoir à entrer de nouveau votre mot de passe.</p>
+                            <p class="caption">La fonction connexion automatique vous permet de rester connecté sur Fap Cloud sans avoir à entrer de nouveau votre mot de passe.</p>
                             <p><?php if(isset($_COOKIE['AUTH']) ){ echo'Connexion automatique activée sur ce navigateur. Pour désactiver cette fonction, déconnectez-vous.';}else{ echo 'Vous n\'avez pas activé la connexion automatique sur ce navigateur.';} ?></p>
                         </div>
                     </li>
@@ -211,7 +211,7 @@ port this file to another platform without the owner's written consent. -->
                         </div>
                         <div class="bottom-list">
                             <p>Votre profil utilisateur n'est pas référencé par les moteurs de recherche.</p>
-                            <p>Les documents et fichiers ne sont pas référencés par les moteurs de recherches et ne sont accessibles qu'aux personnes ayant un compte Square Cloud.</p>
+                            <p>Les documents et fichiers ne sont pas référencés par les moteurs de recherches et ne sont accessibles qu'aux personnes ayant un compte Fap Cloud.</p>
                         </div>
                     </li>
 
@@ -248,7 +248,7 @@ port this file to another platform without the owner's written consent. -->
         <div class="modal">
             <div class="text-container">
                 <p class="title">Suppression de votre compte</p>
-                <p class="explications">Une fois votre compte Square Cloud supprimé, vous ne serez pas en mesure d'en créer un nouveau.</p>
+                <p class="explications">Une fois votre compte Fap Cloud supprimé, vous ne serez pas en mesure d'en créer un nouveau.</p>
             </div>
             <div class="modal-buttons">
                 <a class="two" id="close" title="">Annuler</a>

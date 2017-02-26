@@ -274,7 +274,7 @@
                                                     <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Bonjour xxxxx,</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Merci de votre inscription sur Square Cloud ! Votre inscription est terminée et vous pouvez commencer à regarder des films et des séries TV dès maintenant.</td>
+                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Merci de votre inscription sur Fap Cloud ! Votre inscription est terminée et vous pouvez commencer à regarder des films et des séries TV dès maintenant.</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Please visit
@@ -286,7 +286,7 @@
                                                     <td class="title" style="font-family: monospace;padding:22px 30px 0 30px;color:rgb(34, 31, 31);">2f564se4ffssf35e4f54sf</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Merci de votre inscription sur Square Cloud ! Votre inscription est terminée et vous pouvez commencer à
+                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Merci de votre inscription sur Fap Cloud ! Votre inscription est terminée et vous pouvez commencer à
                                                         <a href="http://www.squarecloud.fr/" style="color:#E50914 !important;font-family:Helvetica, Arial, sans;font-weight:normal;text-decoration:underline;">Télécharger des documents</a>
                                                         dès maintenant.
                                                     </td>
@@ -297,7 +297,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">– L'équipe Square Cloud</td>
+                                                    <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">– L'équipe Fap Cloud</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="spacer">
@@ -429,14 +429,14 @@
                                                 </tr>
 -->
                                                 <tr>
-                                                    <td class="footer footer-copy" style="font-size:12px;line-height:18px;padding:10px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Cet e-mail vous a été envoyé dans le cadre de votre inscription sur Square Cloud. Pour modifier vos préférences, veuillez accéder à la page
+                                                    <td class="footer footer-copy" style="font-size:12px;line-height:18px;padding:10px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Cet e-mail vous a été envoyé dans le cadre de votre inscription sur Fap Cloud. Pour modifier vos préférences, veuillez accéder à la page
                                                         <a style="color:#666666;color:rgb(102, 102, 102);color:inherit;" href="https://www.netflix.com/EmailPreferences?lnktrk=EMP&amp;g=C3BF56492133D061C101C912E28E858364529CA9&amp;lkid=URL_COMM_SETTINGS">Paramètres de communication</a>
                                                         de votre compte. Veuillez ne pas répondre à cet e-mail. Si vous avez besoin d'aide ou souhaitez nous contacter, envoyez nous un e-mail à 
                                                         <a href="mailto:contact@squarecloud.fr" style="color:#666666;color:rgb(102, 102, 102);color:inherit;">contact@squarecloud.fr</a>.</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="footer footer-copy" style="font-size:12px;line-height:18px;padding:10px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Ce message est adressé à [
-                                                        <a href="#" style="text-decoration: none !important; color: #666666;color:rgb(102, 102, 102);color:inherit;">xxxxxxxx@xxxx.xxx</a>] de la part de Square Cloud.</td>
+                                                        <a href="#" style="text-decoration: none !important; color: #666666;color:rgb(102, 102, 102);color:inherit;">xxxxxxxx@xxxx.xxx</a>] de la part de Fap Cloud.</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="footer footer-copyNp" style="font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);font-size:12px;line-height:18px;padding:0px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);">

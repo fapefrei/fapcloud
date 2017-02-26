@@ -342,8 +342,8 @@ function welcomeMail($prenom, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/welcome.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud <contact@squarecloud.fr>' . "\r\n";
-    $subject = "Bienvenue sur Square Cloud";
+    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $subject = "Bienvenue sur Fap Cloud";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Welcome', $mail);
 }
@@ -359,7 +359,7 @@ function confirmMail($prenom, $pseudo, $mail, $key){
 
     $emailContent = emailLoadTemplate($args, 'mails/confirm.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
     $subject = "Confirmez la création de votre compte";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Confirm', $mail);
@@ -375,8 +375,8 @@ function mail_passwordReset($prenom, $mail, $key){
 
     $emailContent = emailLoadTemplate($args, 'mails/password-reset.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud <contact@squarecloud.fr>' . "\r\n";
-    $subject = "Réinitialisation du mot de passe Square Cloud";
+    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $subject = "Réinitialisation du mot de passe Fap Cloud";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Pass reset', $mail);
 }
@@ -392,7 +392,7 @@ function mail_passwordChanged($prenom, $pseudo, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/password.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
     $subject = "Votre compte a été mis à jour";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Pass changed', $mail);
@@ -411,7 +411,7 @@ function mail_signalerprobleme($pseudo, $text, $browser, $date, $page, $type){
     $mail = "contact@squarecloud.fr";
     $emailContent = emailLoadTemplate($args, 'mails/signaler-probleme.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud Admin <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud Admin <contact@squarecloud.fr>' . "\r\n";
     $subject = "Signalement de problème [@".$pseudo."]";
     mail($mail, $subject, $emailContent, $headers);
 }
@@ -432,7 +432,7 @@ function mail_cron($task, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/cron-confirm.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Square Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
     $subject = "Tâche Cron effectuée";
     mail($mail, $subject, $emailContent, $headers);
 }

@@ -13,7 +13,7 @@ if(strpos($actual_link, 'php') == true){
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>S'inscrire sur Square Cloud</title>
+    <title>S'inscrire sur Fap Cloud</title>
     <meta name="Author" content=""/>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,7 +28,7 @@ if(strpos($actual_link, 'php') == true){
     </div>
     <!-- /Navigation bar -->
     <div id="content-wrap">
-        <h1>Rejoignez Square Cloud aujourd'hui.</h1>
+        <h1>Rejoignez Fap Cloud aujourd'hui.</h1>
         <form id="form-account" method="post" action="/functions.php">
             <hr>
             <div class="input-card" data-error="">
@@ -156,9 +156,10 @@ if(strpos($actual_link, 'php') == true){
         <div class="home-footer-container">
             <i class="icon-noun-fin-de-liste"></i>
             <div class="texte">
-                <p>Square Cloud 2014-<?= date("Y"); ?>.</p>
-                <p>A website by Square Inc.</p>
-                <p>Square Cloud™ is a registered trademark of Square Inc.<br/>Mentioned companies names and logos are property of their respective owners.<br/>Your use of any information or materials on this website is entirely at your own risk.</p>
+                <p>Fap Cloud 2014-<?= date("Y"); ?>.</p>
+                <p>A website by FapEfrei.</p>
+                <p>Originally written by Loris Florant.</p>
+                <p>Fap Cloud™ is a registered trademark of FapInc.<br/>Mentioned companies names and logos are property of their respective owners.<br/>Your use of any information or materials on this website is entirely at your own risk.</p>
             </div>
         </div>
     </footer>

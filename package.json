@@ -1,7 +1,7 @@
 {
   "name": "squarecloud",
   "version": "0.0.2",
-  "description": "A basic template for use in square cloud",
+  "description": "A basic template for use in Fap Cloud",
   "scripts": {
     "test": ""
   },

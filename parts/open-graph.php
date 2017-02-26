@@ -1,7 +1,7 @@
 <!-- Open Graph protocol -->
-<meta property="og:title" content="Square Cloud"/>
+<meta property="og:title" content="Fap Cloud"/>
 <meta property="og:type" content="website"/>
-<meta property="og:site_name" content="Square Cloud"/>
+<meta property="og:site_name" content="Fap Cloud"/>
 <meta property="og:url" content="https://www.squarecloud.fr"/>
 <meta property="og:type" content="website" />
 <meta property="og:image" content="http://www.squarecloud.fr/images/sharing/hello.jpg"/>
