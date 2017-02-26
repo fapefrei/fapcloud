@@ -137,7 +137,7 @@ port this file to another platform without the owner's written consent. -->
                     <li>
                         <div class="top-list">
                             <i class="material-icons">account_circle</i><p>Votre compte</p>
-                            <p class="data">Loris Florant</p>
+                            <p class="data"><?= $name.' '. $lastname ?></p>
                         </div>
                         <div class="bottom-list">
                             <p class="caption">Un aperçu des informations de votre compte Square Cloud.</p>
@@ -196,7 +196,7 @@ port this file to another platform without the owner's written consent. -->
                     <li>
                         <div class="top-list">
                             <i class="material-icons">cached</i><p>Connexion automatique</p>
-                            <p class="data"><?=  ($_COOKIE['AUTH'] ? 'Oui' : 'Non'); ?></p>
+                            <p class="data"><?=  (isset($_COOKIE['AUTH']) ? 'Oui' : 'Non'); ?></p>
                         </div>
                         <div class="bottom-list">
                             <p class="caption">La fonction connexion automatique vous permet de rester connecté sur Square Cloud sans avoir à entrer de nouveau votre mot de passe.</p>
