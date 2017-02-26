@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php if(!isset($_SESSION)) session_start(); ?>
 <?php
 //Redirection si url rewriting mauvais
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -76,7 +76,7 @@ port this file to another platform without the owner's written consent. -->
 /* Fonction principale de la Timeline */
 function hashtag($hashtag){
     require("connect_db.php");
-    session_start();
+    if(!isset($_SESSION)) session_start();
 
     $timeline = "SELECT * FROM posts WHERE ( status LIKE '%#$hashtag%') AND ( display = '1') ORDER BY date DESC"; 
     $result = $conn->query($timeline);

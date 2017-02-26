@@ -10,7 +10,7 @@
 /* Fonction principale de la Timeline */
 function notifications_posts($pseudo){
     require("connect_db.php");
-    session_start();
+    if(!isset($_SESSION)) session_start();
 
     $timeline = "SELECT * FROM posts WHERE status LIKE '%@$pseudo%' AND display = '1' ORDER BY date DESC"; 
     $result = $conn->query($timeline);

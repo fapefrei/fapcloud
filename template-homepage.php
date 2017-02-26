@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php if(!isset($_SESSION)) session_start(); ?>
 <?php 
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if(strpos($actual_link, 'php') == true){
@@ -111,7 +111,7 @@ port this file to another platform without the owner's written consent. -->
 
     <!-- POPUP FIRST LOGIN -->
     <?php 
-    if ($_SESSION['new'] == true){ ?>
+    if (isset($_SESSION['new']) && $_SESSION['new'] == true){ ?>
         <div class="erreur-modal"></div>
     <?php $_SESSION['new'] = false; } ?>
     <div id="modal-new" class="modal-container">

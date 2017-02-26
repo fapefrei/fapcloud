@@ -1,6 +1,6 @@
-<?php session_start(); ?>
+<?php if(!isset($_SESSION)) session_start(); ?>
 <?php 
-if($_SESSION['accountcreated'] == true){
+if(isset($_SESSION['accountcreated']) && $_SESSION['accountcreated'] == true){
     header('Location: /account/created');
 }
 //Redirection si url rewriting mauvais

@@ -1,4 +1,4 @@
-<?php session_start();
+<?php if(!isset($_SESSION)) session_start();
 $password = $_SESSION['password'];
 $_SESSION['password'] = null;
 setcookie('AUTH', $_SESSION['pseudo'] . '-' . sha1($password) , time() + 3600 * 24 * 3);

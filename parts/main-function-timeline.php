@@ -1,5 +1,5 @@
 <?php
-session_start();
+if(!isset($_SESSION)) session_start();
 
 /* ==========================================================================
     FUNCTION PRINCIPALE TIMELINE | © SQUARE CLOUD
@@ -185,11 +185,11 @@ session_start();
 
                     // Miscelaneous Posts
                     if( (($key % 4) == 1) ){
-                        echo timeline_dl($promo, $lastlogin, $offset_alt);
+                        echo timeline_dl($promotion, $lastlogin, $offset_alt);
                         $offset_alt++;
                     }
                     if( $key == 2 ){
-                        echo est_tendance($promo);
+                        echo est_tendance($promotion);
                     }
                     // Increment key
                     $key++;

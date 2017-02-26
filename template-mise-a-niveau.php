@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php if(!isset($_SESSION)) session_start();?>
 <!DOCTYPE html>
 <html lang="fr">
 <!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,
@@ -26,7 +26,7 @@ port this file to another platform without the owner's written consent. -->
                         <?php
                             $promo = $_SESSION['promo'];
                             // $promo = "L1";
-                            session_start();
+                            if(!isset($_SESSION)) session_start();
                             $_SESSION['color'] = '1b95e0';
                             if($promo == 'L1'){ $current = 1;}
                             if($promo == 'L2'){ $current = 2;}

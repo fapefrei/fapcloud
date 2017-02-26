@@ -32,7 +32,7 @@ function get_signature(){
 /* Checks if the user is logged in (true/false) */
 function is_logged_in(){
     
-    session_start();
+    if(!isset($_SESSION)) session_start();
     if ( isset( $_SESSION['pseudo'])){
         return true;
     }else{
@@ -41,9 +41,8 @@ function is_logged_in(){
 }
 
 /* MAIN LOGIN FUNCTION */
-function login($mail, $password, $alt)
+function login($mail = '', $password = '', $alt = 0)
 {
-
     $try = '['.$_POST['username'].'] ['.$_POST["password"].']';
     logs_history('Login try', $try);
 
@@ -69,7 +68,7 @@ function login($mail, $password, $alt)
                 // User acount is active
                 if($row['actif'] == 1){
                     // SESSION variables set
-                    session_start();
+                    if(!isset($_SESSION)) session_start();
                     $_SESSION["pseudo"] = $row["uname"];
                     $_SESSION["nom"] = $row['lastname'];
                     $_SESSION["prenom"] = $row['name'];
@@ -134,7 +133,7 @@ function logout()
     logs_history('Logout user', null);
 
     /* ERASE SESSION */
-    session_start();
+    if(!isset($_SESSION)) session_start();
     $_SESSION["promo"] = null;
     $_SESSION["pseudo"] = null;
     session_unset(); 
@@ -151,7 +150,7 @@ function logout()
 
 function delete_cookie()
 {
-    session_start();
+    if(!isset($_SESSION)) session_start();
     /* ERASE COOKIES */
     setcookie ("AUTH", "", time() - 3600);
     setcookie ("auth", "", time() - 3600);
@@ -187,7 +186,7 @@ function test_cookie()
 }
 
 function is_vip(){
-    session_start();
+    if(!isset($_SESSION)) session_start();
     if ( isset( $_SESSION['vip'])){
         return true;
     }else{
@@ -196,7 +195,7 @@ function is_vip(){
 }
 
 function redirect(){
-    session_start();
+    if(!isset($_SESSION)) session_start();
     if(!isset($_SESSION["pseudo"])){
         $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         echo'<form action="/home.php" id="red">
@@ -470,7 +469,7 @@ function selectAvatar(){
     $changeColor = "UPDATE usr SET avatar = '$avatar' WHERE uname = '$pseudo' ";
 
     if ($conn->query($changeColor) === TRUE) {
-        session_start();
+        if(!isset($_SESSION)) session_start();
         $_SESSION['avatar'] = $avatar;
         logs_history('Avatar changed', $pseudo);
         echo json_encode('Done');
@@ -488,7 +487,7 @@ function selectColor(){
     $changeColor = "UPDATE usr SET color = '$color' WHERE uname = '$pseudo' ";
 
     if ($conn->query($changeColor) === TRUE) {
-        session_start();
+        if(!isset($_SESSION)) session_start();
         $_SESSION['color'] = $color;
         logs_history('Color changed', $pseudo);
         echo json_encode('Done');
@@ -628,7 +627,7 @@ function get_the_most_popular_hashtags(){
 }
 
 function changePromotion(){
-    session_start();
+    if(!isset($_SESSION)) session_start();
     $_SESSION['promo'] = $_POST['promo'];
     logs_history('Promotion changed', $_POST['promo']);
 }
@@ -733,7 +732,7 @@ function lastlogin($user){
     $result = $conn->query($lastlog);
 
     if ($conn->query($lastlog) === TRUE) {
-        session_start();
+        if(!isset($_SESSION)) session_start();
         $_SESSION['newlastlogin'] = $now;
     } else {
         die("Erreur sur logindate");
@@ -981,7 +980,7 @@ function add_favoris(){
         $DELETE_favoris = "DELETE FROM favoris WHERE subject = '$matiere' AND uname = '$user'";
         $result = $conn->query($DELETE_favoris);
         if ($conn->query($DELETE_favoris) === TRUE) {
-            header('500 Internal Server Error', true, 500);
+            //header('500 Internal Server Error', true, 500);
             logs_history('Favoris Deleted', $matiere);
             echo 'Favoris deleted';
         }
@@ -1006,7 +1005,7 @@ function favoris_check($user, $subject){
     if ($result->num_rows > 0) {
         return json_encode('star');
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         return json_encode('star_border');
     }
 }
@@ -1066,7 +1065,7 @@ function download_history($document_id, $user){
 /* ========================================================================== */
 
 function download(){
-    session_start();
+    if(!isset($_SESSION)) session_start();
     $document_id = $_POST['document'];
     $user = $_SESSION['pseudo'];
     logs_history('Download', $document_id);
@@ -1209,20 +1208,20 @@ function search(){
     TIME AGO
 /* ========================================================================== */
 
-define( TIMEBEFORE_NOW,         'À l\'instant');
-define( TIMEBEFORE_MINUTE,      'Il y a {num} minute' );
-define( TIMEBEFORE_MINUTES,     'Il y a {num} minutes' );
-define( TIMEBEFORE_HOUR,        'Il y a {num} heure' );
-define( TIMEBEFORE_HOURS,       'Il y a {num} heures' );
-define( TIMEBEFORE_YESTERDAY,   'Hier' );
-define( TIMEBEFORE_DAY,         'Il y a {num} jour' );
-define( TIMEBEFORE_DAYS,        'Il y a {num} jours' );
-define( TIMEBEFORE_WEEK,        'Il y a {num} semaine' );
-define( TIMEBEFORE_WEEKS,       'Il y a {num} semaines' );
-define( TIMEBEFORE_MONTH,       'Il y a {num} mois' );
-define( TIMEBEFORE_MONTHS,      'Il y a {num} mois' );
-define( TIMEBEFORE_FORMAT,      '%e %b' );
-define( TIMEBEFORE_FORMAT_YEAR, '%e %b, %Y' );
+define('TIMEBEFORE_NOW',         'À l\'instant');
+define('TIMEBEFORE_MINUTE',      'Il y a {num} minute' );
+define('TIMEBEFORE_MINUTES',     'Il y a {num} minutes' );
+define('TIMEBEFORE_HOUR',        'Il y a {num} heure' );
+define('TIMEBEFORE_HOURS',       'Il y a {num} heures' );
+define('TIMEBEFORE_YESTERDAY',   'Hier' );
+define('TIMEBEFORE_DAY',         'Il y a {num} jour' );
+define('TIMEBEFORE_DAYS',        'Il y a {num} jours' );
+define('TIMEBEFORE_WEEK',        'Il y a {num} semaine' );
+define('TIMEBEFORE_WEEKS',       'Il y a {num} semaines' );
+define('TIMEBEFORE_MONTH',       'Il y a {num} mois' );
+define('TIMEBEFORE_MONTHS',      'Il y a {num} mois' );
+define('TIMEBEFORE_FORMAT',      '%e %b' );
+define('TIMEBEFORE_FORMAT_YEAR', '%e %b, %Y' );
 
 function time_ago( $time ) {
 
@@ -1318,7 +1317,7 @@ function is_liked($document_id, $user_id){
     if ($result->num_rows > 0) {
         return true;
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         return false;
     }
 }
@@ -1337,7 +1336,7 @@ function like(){
         $result = $conn->query($DELETE);
 
         if ($conn->query($DELETE) === TRUE) {
-            header('500 Internal Server Error', true, 500);
+            //header('500 Internal Server Error', true, 500);
         }
 
     }else{
@@ -1387,7 +1386,7 @@ function maj(){
     $query = "UPDATE usr SET promo = '$promo', color = '$color', avatar = '$avatar', groupe = NULL, EFREIusr = NULL, EFREIpass = NULL, EFREIcopie = NULL, alertDe = 0 WHERE uname = '$user'";
 
     if ($conn->query($query) === TRUE) {
-        session_start();
+        if(!isset($_SESSION)) session_start();
         $_SESSION['color'] = $color;
         $_SESSION['avatar'] = $avatar;
         $_SESSION['promo'] = $promo;
@@ -1605,7 +1604,7 @@ function create_new_account(){
 
     if ($conn->query($CREATE_USER_ACCOUNT) === TRUE) {
         confirmMail($prenom, $pseudo, $email, $cle);
-        session_start();
+        if(!isset($_SESSION)) session_start();
         $_SESSION['accountcreated'] = true;
         return true;
     }else{
@@ -1618,7 +1617,7 @@ function create_new_account(){
 
 // function get_mention_number(){
     // require('connect_db.php');
-    // session_start();
+    // if(!isset($_SESSION)) session_start();
     // $pseudo = $_SESSION['pseudo'];
     // $lastlogin = $_SESSION['lastlogin'];
     // $today = new DateTime('now');
@@ -1724,9 +1723,9 @@ function getBrowser()
 function logs_history($action, $value)
 {
     //User
-    session_start();
-    $user_name = $_SESSION["pseudo"];
-    $user_year = $_SESSION["promo"];
+    if(!isset($_SESSION)) session_start();
+    $user_name = isset($_SESSION["pseudo"]) ? $_SESSION["pseudo"] : '';
+    $user_year = isset($_SESSION["promo"]) ? $_SESSION["pseudo"] : '';
 
     //Admin
     if( is_vip() == 'true'){
@@ -1746,6 +1745,8 @@ function logs_history($action, $value)
     $date = $today->format('Y-m-d H:i:s');
     
     include('connect_db.php');
+
+    $sql_request = isset($sql_request) ? $sql_request : '';
 
     $CREATE_LOG = "INSERT INTO logs (date, action, value, user_name, user_year, admin_enabled, sql_request, source) 
     VALUES ('$date','$action', '$value', '$user_name', '$user_year', '$admin_enabled', '$sql_request', '$source' )";

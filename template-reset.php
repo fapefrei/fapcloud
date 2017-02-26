@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php if(!isset($_SESSION)) session_start();?>
 <!DOCTYPE html>
 <html lang="fr">
 <!-- IMPORTANT NOTE: This file is licensed only for use in providing the Square Cloud service,

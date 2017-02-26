@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php if(!isset($_SESSION)) session_start(); ?>
 <?php
 require("connect_db.php");
 $document_id = $_GET['document'];

@@ -1,5 +1,5 @@
 <?php header("Content-type: text/css; charset: UTF-8");
-session_start();
+if(!isset($_SESSION)) session_start();
 $color = $_SESSION["color"];
 
 ?>

@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php if(!isset($_SESSION)) session_start();?>
 <?php 
 //Redirection si url rewriting mauvais
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

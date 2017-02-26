@@ -1,5 +1,5 @@
 <?php
-session_start();
+if(!isset($_SESSION)) session_start();
 // Redirection si mauvais url rewriting
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if(strpos($actual_link, 'php') == true){
@@ -39,7 +39,7 @@ Could frame thy fearful symmetry? -->
                 <div id="logo"><span class="big-logo icon-noun-logo-sc"></span><span class="small-logo icon-noun-fin-de-liste"></span></div> 
                 <div class="btn-container">
                     <a href="/compte.php" title="Créer un compte">Créer un compte</a>
-                    <a href="/login" class="connexion" title="Se connecter"><?=  ( $_SESSION['pseudo'] ? 'Accueil' : 'Connexion'); ?></a>
+                    <a href="/login" class="connexion" title="Se connecter"><?=  ( isset($_SESSION['pseudo']) ? 'Accueil' : 'Connexion'); ?></a>
                 </div>
             </div>
         </nav>
