@@ -1,0 +1,56 @@
+#Fichier .htaccess 
+
+ErrorDocument 404 /404/404.php
+ErrorDocument 403 /403/403.php
+
+#Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+# HTTPS
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+# � propos
+RewriteRule ^about$ /home.php [L]
+
+# Compte
+RewriteRule ^account$ /compte.php [L]
+RewriteRule ^account/created$ /compte-done.php [L]
+
+# Mati�res
+RewriteRule ^cours/([a-zA-Z0-9\-]+)-([A-Z0-9]+)$ /single-matiere.php?url=$1&subject=$2
+
+# Single documents
+RewriteRule ^document/([a-zA-Z0-9\_]+)$ /single-document.php?document=$1
+
+# Homepage
+RewriteRule ^$ /template-homepage.php [L]
+#RewriteRule ^$ /home.php [L]
+
+# Redirect homepage
+#RewriteCond %{THE_REQUEST} \s/template-homepage.php\s [NC]
+#RewriteRule ^ [R=301,L]
+
+
+# Notification
+RewriteRule ^notifications$ /template-notifications.php [L]
+
+# Confidentialit�
+RewriteRule ^politique-de-confidentialite$ /template-confidentialite.php [L]
+
+# CGU
+RewriteRule ^condition-d-utilisation$ /template-conditions.php [L]
+
+# Login
+RewriteRule ^login$ /template-login.php [L]
+
+# Profil
+RewriteRule ^profil/([a-zA-Z0-9_]+)$ /template-profil.php?user=$1
+RewriteRule ^settings/([a-zA-Z0-9_]+)$ /template-profil.php?user=$1&tab=3
+
+# Hashtag
+RewriteRule ^hashtag/([a-zA-Z0-9]+)$ /template-hashtag.php?hashtag=$1
+
+#RewriteCond %{THE_REQUEST} \s/section\.php\?id=([0-9]+)\s [NC]
+#RewriteRule ^/section/%1? [R=301,L]

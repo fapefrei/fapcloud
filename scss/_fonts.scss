@@ -1,0 +1,230 @@
+/* ==========================================================================
+    FONT GLOBAL
+/* ========================================================================== */
+
+/*------------------------------------*\
+#VEON FONT
+\*------------------------------------*/
+
+@include font-face("veon", "../fonts/veon/veon", $file-formats: ttf woff);
+
+@include font-face("Muller", "../fonts/muller/Muller-ExtraBold", bold, $file-formats: otf ttf);
+@include font-face("Muller", "../fonts/muller/Muller-Thin", light, $file-formats: otf ttf);
+
+//@include font-face("Freight Sans", "../fonts/Freight_Sans/Freight_Sans_Bold_SC", light, $file-formats: otf);
+@include font-face("rounded", "../fonts/rounded", light, $file-formats: ttf);
+
+@include font-face("parisine", "../fonts/parisine/Parisine-Regular", normal, $file-formats: ttf);
+
+
+@include font-face("Gridnik", "../fonts/gridnik/FoundryGridnik-Light", 100, $file-formats: ttf);
+@include font-face("Gridnik", "../fonts/gridnik/FoundryGridnik-Regular", normal, $file-formats: ttf);
+@include font-face("Gridnik", "../fonts/gridnik/FoundryGridnik-Medium", 600, $file-formats: ttf);
+@include font-face("Gridnik", "../fonts/gridnik/FoundryGridnik-Bold", bold, $file-formats: ttf);
+
+
+//@font-face {
+//    font-family: 'gridnik';
+//    src: url('../fonts/gridnik/FoundryGridnik-Light.otf') format('truetype');
+//    font-weight: 100;
+//}
+//@font-face {
+//    font-family: 'gridnik';
+//    src: url('../fonts/gridnik/FoundryGridnik-Regular.otf') format('truetype');
+//    font-weight: normal; 
+//}
+//@font-face {
+//    font-family: 'gridnik';
+//    src: url('../fonts/gridnik/FoundryGridnik-Medium.otf') format('truetype');
+//    font-weight: 600;
+//}
+//@font-face {
+//    font-family: 'gridnik';
+//    src: url('../fonts/gridnik/FoundryGridnik-Bold.otf') format('truetype');
+//    font-weight: bold;
+//}
+
+/*------------------------------------*\
+#ICOMOON FONT
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon/icomoon.eot?l3t0ve');
+    src:    url('../fonts/icomoon/icomoon.eot?l3t0ve#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?l3t0ve') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?l3t0ve') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?l3t0ve#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+    content: "\f00d";
+}
+.icon-arrow-down:before {
+    content: "\f107";
+}
+.icon-help-circle:before {
+    content: "\f29c";
+}
+
+
+
+/*------------------------------------*\
+#1B SAN FRANCISCO DISPLAY FONT
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-ultralight-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-thin-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-semibold-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-heavy-webfont.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFD';
+    src: url('../fonts/SF/sanfranciscodisplay-black-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/*------------------------------------*\
+#2 SAN FRANCISCO TEXT FONT
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-thin-webfont.ttf') format('truetype');
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-light-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFT';
+    src: url('../fonts/SF/sanfranciscotext-heavy-webfont.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+.material-icons {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  position: relative;
+  top: 3px;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
