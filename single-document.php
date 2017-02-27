@@ -154,8 +154,8 @@ port this file to another platform without the owner's written consent. -->
                   </ul>
                   <div class="more-menu">
                     <ul class="actions-drowpdown-list">
-                      <li class="subject-link" id="open-link" data-link="http://www.squarecloud.fr/single-matiere.php?subject=<?= $subject; ?>">Copier le lien de la matière</li>
-                      <li class="document-link" id="open-link" data-link="http://www.squarecloud.fr/single-document.php?document=<?= $document_id; ?>">Copier le lien du document</li>
+                      <li class="subject-link" id="open-link" data-link="http://www.fapcloud.fr/single-matiere.php?subject=<?= $subject; ?>">Copier le lien de la matière</li>
+                      <li class="document-link" id="open-link" data-link="http://www.fapcloud.fr/single-document.php?document=<?= $document_id; ?>">Copier le lien du document</li>
                       <li>Signaler</li>
                     </ul>
                   </div>

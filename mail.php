@@ -287,13 +287,13 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Merci de votre inscription sur Fap Cloud ! Votre inscription est terminée et vous pouvez commencer à
-                                                        <a href="http://www.squarecloud.fr/" style="color:#E50914 !important;font-family:Helvetica, Arial, sans;font-weight:normal;text-decoration:underline;">Télécharger des documents</a>
+                                                        <a href="http://www.fapcloud.fr/" style="color:#E50914 !important;font-family:Helvetica, Arial, sans;font-weight:normal;text-decoration:underline;">Télécharger des documents</a>
                                                         dès maintenant.
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="copy" style="padding:22px 30px 0 30px;color:rgb(34, 31, 31);">Si vous avez des questions, n'hésitez pas à nous contacter sur
-                                                        <a href="mailto:contact@squarecloud.fr" style="color:inherit;font-family:Helvetica, Arial, sans;font-weight:normal;text-decoration:underline;color:rgb(34, 31, 31);">contact@squarecloud.fr</a>.
+                                                        <a href="mailto:contact@fapcloud.fr" style="color:inherit;font-family:Helvetica, Arial, sans;font-weight:normal;text-decoration:underline;color:rgb(34, 31, 31);">contact@fapcloud.fr</a>.
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -425,14 +425,14 @@
                                             <tbody>
 <!--
                                                 <tr>
-                                                    <td class="footer questions" style="font-size:14px;line-height:18px;padding:22px 44px 10px 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Questions? contact@squarecloud.fr</td>
+                                                    <td class="footer questions" style="font-size:14px;line-height:18px;padding:22px 44px 10px 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Questions? contact@fapcloud.fr</td>
                                                 </tr>
 -->
                                                 <tr>
                                                     <td class="footer footer-copy" style="font-size:12px;line-height:18px;padding:10px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Cet e-mail vous a été envoyé dans le cadre de votre inscription sur Fap Cloud. Pour modifier vos préférences, veuillez accéder à la page
                                                         <a style="color:#666666;color:rgb(102, 102, 102);color:inherit;" href="https://www.netflix.com/EmailPreferences?lnktrk=EMP&amp;g=C3BF56492133D061C101C912E28E858364529CA9&amp;lkid=URL_COMM_SETTINGS">Paramètres de communication</a>
                                                         de votre compte. Veuillez ne pas répondre à cet e-mail. Si vous avez besoin d'aide ou souhaitez nous contacter, envoyez nous un e-mail à 
-                                                        <a href="mailto:contact@squarecloud.fr" style="color:#666666;color:rgb(102, 102, 102);color:inherit;">contact@squarecloud.fr</a>.</td>
+                                                        <a href="mailto:contact@fapcloud.fr" style="color:#666666;color:rgb(102, 102, 102);color:inherit;">contact@fapcloud.fr</a>.</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="footer footer-copy" style="font-size:12px;line-height:18px;padding:10px 44px 0 44px;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);font-family:Helvetica, Arial, sans;color:rgb(102, 102, 102);background-color:rgb(223, 220, 213);border-color:rgb(223, 220, 213);">Ce message est adressé à [

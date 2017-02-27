@@ -117,8 +117,8 @@ if(!isset($_SESSION)) session_start();
                          </ul>
                          <div class="more-menu">
                              <ul class="actions-drowpdown-list">
-                                 <li class="subject-link" id="open-link" data-link="http://www.squarecloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
-                                 <li class="document-link" id="open-link" data-link="http://www.squarecloud.fr/single-document.php?document=<?= $row['document_id']; ?>">Copier le lien du document</li>
+                                 <li class="subject-link" id="open-link" data-link="http://www.fapcloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
+                                 <li class="document-link" id="open-link" data-link="http://www.fapcloud.fr/single-document.php?document=<?= $row['document_id']; ?>">Copier le lien du document</li>
                                  <a href="/template-profil.php?user=<?= $row['user']; ?>"><li>Profil de @<?= $row['user']; ?></li></a>
                                  <li class="signaler">Signaler</li>
                                  <?php if( $row['user'] == $_SESSION['pseudo']){ ?>
@@ -167,7 +167,7 @@ if(!isset($_SESSION)) session_start();
                          </ul>
                          <div class="more-menu">
                              <ul class="actions-drowpdown-list">
-                                 <li class="subject-link" id="open-link" data-link="http://www.squarecloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
+                                 <li class="subject-link" id="open-link" data-link="http://www.fapcloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
                                  <a href="/template-profil.php?user=<?= $row['user']; ?>"><li>Profil de @<?= $row['user']; ?></li></a>
                                  <li class="signaler">Signaler</li>
                                  <?php if( $row['user'] == $_SESSION['pseudo']){ ?>

@@ -26,7 +26,7 @@ port this file to another platform without the owner's written consent. -->
     <meta name="twitter:site" content="@lorismrtnl" />
     <meta name="twitter:title" content="Système d'Information en Ligne | Fap Cloud" />
     <meta name="twitter:description" content="Consultez le temps d'attente avant vos prochains Devoirs Écrit." />
-    <meta name="twitter:image" content="https://squarecloud.fr/" />
+    <meta name="twitter:image" content="https://fapcloud.fr/" />
 </head>
 <?php //include_once('functions.php'); ?>
 <?php if( isset($_GET['year']) ){ $year = $_GET['year'];}else{ $year = "l1"; } ?>
@@ -90,7 +90,7 @@ port this file to another platform without the owner's written consent. -->
         <input id="input" type="hidden" name="year" value="l2">
     </form>
     
-    <p id="credits">  <span id="help">Aide</span> | © <?= date("Y"); ?> SIEL 1.1 (Système d'Infomation en Ligne) — <a target="blank" href="https://www.squarecloud.fr">Coded by Loris M.</a></p>
+    <p id="credits">  <span id="help">Aide</span> | © <?= date("Y"); ?> SIEL 1.1 (Système d'Infomation en Ligne) — <a target="blank" href="https://www.fapcloud.fr">Coded by Loris M.</a></p>
     
     <?php
     function get_the_date($year){

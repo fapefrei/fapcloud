@@ -226,7 +226,7 @@ function changePassword()
 
         if($password_entered == $pass ){
             if($_POST["pass1"] != $_POST["pass2"]){
-                header('500 Internal Server Error', true, 500);
+                //header('500 Internal Server Error', true, 500);
                 echo json_encode('Passwords don&apos;t match.');
 
             }elseif($_POST["pass1"] != ""){
@@ -243,15 +243,15 @@ function changePassword()
                     logs_history('Password Changed', $usr);
 
                 } else {
-                    header('500 Internal Server Error', true, 500);
+                    //header('500 Internal Server Error', true, 500);
                 }
 
             }else{
-                header('500 Internal Server Error', true, 500);
+                //header('500 Internal Server Error', true, 500);
                 echo json_encode('Entrez un nouveau mot de passe.');
             }
         }else{
-            header('500 Internal Server Error', true, 500);
+            //header('500 Internal Server Error', true, 500);
             echo json_encode('Mot de passe actuel invalide.');
         }
     }
@@ -268,7 +268,7 @@ function get_user_email($pseudo){
             return $row['email'];
         }
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         return null;
     }
     $conn->close();
@@ -342,7 +342,7 @@ function welcomeMail($prenom, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/welcome.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@fapcloud.fr>' . "\r\n";
     $subject = "Bienvenue sur Fap Cloud";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Welcome', $mail);
@@ -350,7 +350,7 @@ function welcomeMail($prenom, $mail){
 
 /* Confirmation du compte */
 function confirmMail($prenom, $pseudo, $mail, $key){
-    $link = 'http://www.squarecloud.fr/activation.php?log='.urlencode($pseudo).'&cle='.urlencode($key);
+    $link = 'http://www.fapcloud.fr/activation.php?log='.urlencode($pseudo).'&cle='.urlencode($key);
     $args = [
         'prenom'=> $prenom,
         'link'=> $link,
@@ -359,7 +359,7 @@ function confirmMail($prenom, $pseudo, $mail, $key){
 
     $emailContent = emailLoadTemplate($args, 'mails/confirm.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@fapcloud.fr>' . "\r\n";
     $subject = "Confirmez la création de votre compte";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Confirm', $mail);
@@ -370,12 +370,12 @@ function mail_passwordReset($prenom, $mail, $key){
     $args = [
         'prenom'=> $prenom,
         'email'=> $mail,
-        'lien'=> 'http://squarecloud.fr/template-reset.php?key='.$key
+        'lien'=> 'http://fapcloud.fr/template-reset.php?key='.$key
     ];
 
     $emailContent = emailLoadTemplate($args, 'mails/password-reset.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@fapcloud.fr>' . "\r\n";
     $subject = "Réinitialisation du mot de passe Fap Cloud";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Pass reset', $mail);
@@ -392,7 +392,7 @@ function mail_passwordChanged($prenom, $pseudo, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/password.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@fapcloud.fr>' . "\r\n";
     $subject = "Votre compte a été mis à jour";
     mail($mail, $subject, $emailContent, $headers);
     logs_history('Mail sent: Pass changed', $mail);
@@ -408,10 +408,10 @@ function mail_signalerprobleme($pseudo, $text, $browser, $date, $page, $type){
         'type'=> $type,
         'page'=> $page
     ];
-    $mail = "contact@squarecloud.fr";
+    $mail = "contact@fapcloud.fr";
     $emailContent = emailLoadTemplate($args, 'mails/signaler-probleme.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud Admin <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud Admin <contact@fapcloud.fr>' . "\r\n";
     $subject = "Signalement de problème [@".$pseudo."]";
     mail($mail, $subject, $emailContent, $headers);
 }
@@ -432,7 +432,7 @@ function mail_cron($task, $mail){
 
     $emailContent = emailLoadTemplate($args, 'mails/cron-confirm.php');
     $headers = 'Content-type: text/html; charset=UTF-8' . "\r\n";
-    $headers .= 'From: Fap Cloud <contact@squarecloud.fr>' . "\r\n";
+    $headers .= 'From: Fap Cloud <contact@fapcloud.fr>' . "\r\n";
     $subject = "Tâche Cron effectuée";
     mail($mail, $subject, $emailContent, $headers);
 }
@@ -474,7 +474,7 @@ function selectAvatar(){
         logs_history('Avatar changed', $pseudo);
         echo json_encode('Done');
     } else {
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         echo 'Error';
     }
 }
@@ -492,7 +492,7 @@ function selectColor(){
         logs_history('Color changed', $pseudo);
         echo json_encode('Done');
     } else {
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         echo 'Error';
     }
 }
@@ -775,7 +775,7 @@ function lastlogin($user){
 /* ========================================================================== */
 
 function the_link($address){
-    echo 'https://squarecloud.fr/'.substr($address, 3); 
+    echo 'https://fapcloud.fr/'.substr($address, 3);
 }
 
 /* ==========================================================================
@@ -980,7 +980,7 @@ function add_favoris(){
         $DELETE_favoris = "DELETE FROM favoris WHERE subject = '$matiere' AND uname = '$user'";
         $result = $conn->query($DELETE_favoris);
         if ($conn->query($DELETE_favoris) === TRUE) {
-            //header('500 Internal Server Error', true, 500);
+            ////header('500 Internal Server Error', true, 500);
             logs_history('Favoris Deleted', $matiere);
             echo 'Favoris deleted';
         }
@@ -1005,7 +1005,7 @@ function favoris_check($user, $subject){
     if ($result->num_rows > 0) {
         return json_encode('star');
     }else{
-        //header('500 Internal Server Error', true, 500);
+        ////header('500 Internal Server Error', true, 500);
         return json_encode('star_border');
     }
 }
@@ -1146,7 +1146,7 @@ function password_reset(){
         logs_history('Forget pass: Sent', $email);
         echo json_encode($email);
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         logs_history('Forget pass: Not found', $email);
         echo 'Adresse email inconnue.';
     }
@@ -1165,7 +1165,7 @@ function password_reset_new(){
     if ($conn->query($UpdateDocumentDownloads) === TRUE) {
         logs_history('Password Reseted', $user);
     } else {
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         echo $sql . $conn->error;
     }
 }
@@ -1317,7 +1317,7 @@ function is_liked($document_id, $user_id){
     if ($result->num_rows > 0) {
         return true;
     }else{
-        //header('500 Internal Server Error', true, 500);
+        ////header('500 Internal Server Error', true, 500);
         return false;
     }
 }
@@ -1336,7 +1336,7 @@ function like(){
         $result = $conn->query($DELETE);
 
         if ($conn->query($DELETE) === TRUE) {
-            //header('500 Internal Server Error', true, 500);
+            ////header('500 Internal Server Error', true, 500);
         }
 
     }else{
@@ -1395,7 +1395,7 @@ function maj(){
         $retour['redirect'] = "/";
         echo json_encode($retour);
     } else {
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
     }
 }
 
@@ -1524,14 +1524,14 @@ function deletePost(){
     // $result = $conn->query($DELETE);
 
     // if ($conn->query($DELETE) === TRUE) {
-    //     header('500 Internal Server Error', true, 500);
+    //     //header('500 Internal Server Error', true, 500);
     // }
 
     $update = "UPDATE posts SET display = '0' WHERE id = '$post_id'";
 
     if ($conn->query($update) === TRUE) {
     }else{
-        header('500 Internal Server Error', true, 500); 
+        //header('500 Internal Server Error', true, 500); 
     }
 }
 
@@ -1543,14 +1543,14 @@ function deleteAccount(){
     // $result = $conn->query($DELETE);
 
     // if ($conn->query($DELETE) === TRUE) {
-    //     header('500 Internal Server Error', true, 500);
+    //     //header('500 Internal Server Error', true, 500);
     // }
 
     $update = "UPDATE usr SET actif = '0', errormess = 'Votre compte est en cours de suppression' WHERE usr = '$account_ID'";
 
     if ($conn->query($update) === TRUE) {
     }else{
-        header('500 Internal Server Error', true, 500); 
+        //header('500 Internal Server Error', true, 500); 
     }
 }
 
@@ -1562,7 +1562,7 @@ function checkPseudo(){
     $result = $conn->query($SELECT);
 
     if ($result->num_rows > 0){
-        header('500 Internal Server Error', true, 500); 
+        //header('500 Internal Server Error', true, 500); 
     }else{
 
     }
@@ -1576,7 +1576,7 @@ function checkEmail(){
     $result = $conn->query($SELECT);
 
     if ($result->num_rows > 0){
-        header('500 Internal Server Error', true, 500); 
+        //header('500 Internal Server Error', true, 500); 
     }else{
 
     }
@@ -1608,7 +1608,7 @@ function create_new_account(){
         $_SESSION['accountcreated'] = true;
         return true;
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         return false;
     }
 
@@ -1754,7 +1754,7 @@ function logs_history($action, $value)
     if ($conn->query($CREATE_LOG) === TRUE) {
         return true;
     }else{
-        header('500 Internal Server Error', true, 500);
+        //header('500 Internal Server Error', true, 500);
         return false;
     }
 

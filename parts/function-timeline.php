@@ -51,8 +51,8 @@ function upload_history($user){
                                          </ul>
                                          <div class="more-menu">
                                              <ul class="actions-drowpdown-list">
-                                                 <li class="subject-link" id="open-link" data-link="http://www.squarecloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
-                                                 <li class="document-link" id="open-link" data-link="http://www.squarecloud.fr/single-document.php?document=<?= $row['id']; ?>">Copier le lien du document</li>
+                                                 <li class="subject-link" id="open-link" data-link="http://www.fapcloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
+                                                 <li class="document-link" id="open-link" data-link="http://www.fapcloud.fr/single-document.php?document=<?= $row['id']; ?>">Copier le lien du document</li>
                                                  <a href="/template-profil.php?user=<?= $row['uploaderdisplay']; ?>"><li>Profil de l'utilisateur</li></a>
                                                  <li>Signaler</li>
                                              </ul>
@@ -114,8 +114,8 @@ function like_history($user){
                                          </ul>
                                          <div class="more-menu">
                                              <ul class="actions-drowpdown-list">
-                                                 <li class="subject-link" id="open-link" data-link="http://www.squarecloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
-                                                 <li class="document-link" id="open-link" data-link="http://www.squarecloud.fr/single-document.php?document=<?= $row['id']; ?>">Copier le lien du document</li>
+                                                 <li class="subject-link" id="open-link" data-link="http://www.fapcloud.fr/single-matiere.php?subject=<?= $row['subject']; ?>">Copier le lien de la matière</li>
+                                                 <li class="document-link" id="open-link" data-link="http://www.fapcloud.fr/single-document.php?document=<?= $row['id']; ?>">Copier le lien du document</li>
                                                  <a href="/template-profil.php?user=<?= $row['uploaderdisplay']; ?>"><li>Profil de l'utilisateur</li></a>
                                                  <li>Signaler</li>
                                              </ul>

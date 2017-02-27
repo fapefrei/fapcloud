@@ -861,7 +861,7 @@ var Util = PDFJS.Util = (function UtilClosure() {
     var sx = first + second || 1;
     var sy = first - second || 1;
 
-    // Scale values are the square roots of the eigenvalues.
+    // Scale values are the Faproots of the eigenvalues.
     return [Math.sqrt(sx), Math.sqrt(sy)];
   };
 

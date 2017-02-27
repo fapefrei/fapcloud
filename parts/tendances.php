@@ -16,7 +16,7 @@
         
         <?php get_the_most_popular_hashtags($_SESSION['promo']); ?>
 <!--         <li>
-            <a target="_blank" href="http://siel.squarecloud.fr?year=<?= strtolower($_SESSION['promo']); ?>" >
+            <a target="_blank" href="http://siel.fapcloud.fr?year=<?= strtolower($_SESSION['promo']); ?>" >
                 <p class="trend theme-fcolor">Prochains DE</p>
                 <p class="description linked">Afficher sur le SIEL</p>
             </a>
