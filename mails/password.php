@@ -258,7 +258,7 @@
                                                 <tr>
                                                     <td class="logo" align="center" style="padding:40px 0 0 0;">
                                                         <a href="https://www.fapcloud.fr" style="color:inherit;">
-                                                            <img src="http://beta.fapcloud.fr/images/main-logo-sc-mail.svg" alt="Fap Cloud" width="240" align="center" style="-ms-interpolation-mode:bicubic;border:none;outline:none;border-style:none;">
+                                                            <img src="http://www.fapcloud.fr/images/main-logo-sc-mail.svg" alt="Fap Cloud" width="240" align="center" style="-ms-interpolation-mode:bicubic;border:none;outline:none;border-style:none;">
                                                         </a>
                                                     </td>
                                                 </tr>

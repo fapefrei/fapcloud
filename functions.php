@@ -370,7 +370,7 @@ function mail_passwordReset($prenom, $mail, $key){
     $args = [
         'prenom'=> $prenom,
         'email'=> $mail,
-        'lien'=> 'http://fapcloud.fr/template-reset.php?key='.$key
+        'lien'=> 'http://www.fapcloud.fr/template-reset.php?key='.$key
     ];
 
     $emailContent = emailLoadTemplate($args, 'mails/password-reset.php');
