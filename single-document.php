@@ -87,7 +87,7 @@ port this file to another platform without the owner's written consent. -->
         </div>
         <!-- CENTER CONTENT -->
         <div class="center-content">
-        <?php if($error != 1): ?>
+        <?php if(!isset($error)): ?>
             <div class="card single-document">
                 <div class="file"><i class="filefont-<?= $format; ?>"></i></div>
                 <div class="texts">
