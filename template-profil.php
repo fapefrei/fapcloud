@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
         $groupe = $row["groupe"];
         $avatar = $row["avatar"];
         $pass = $row['upass'];
-        if($own != 1){
+        if(isset($own) && $own != 1){
             $_SESSION['stranger-color'] = $row['color'];
         }else{
             $color = $row['color'];
@@ -93,7 +93,7 @@ port this file to another platform without the owner's written consent. -->
         <!-- SIDE CONTENT -->
         <div class="side-content">
             <?php include('parts/user-card.php'); ?>
-            <?php ($own == 1 ? include('parts/favoris.php') : '' ); ?>
+            <?php (isset($own) && $own == 1 ? include('parts/favoris.php') : '' ); ?>
             <?php include('parts/localisation.php'); ?>
             <hr>
             <?php include('parts/tendances.php'); ?>
@@ -110,11 +110,11 @@ port this file to another platform without the owner's written consent. -->
 
             <div class="card toolbar-card" style="margin-top: 0;">
                 <ul class="tab-selection">
-                    <li class="<?php if($_GET["tab"] != '3'){ echo 'selected';} ?>" data-section="sec-add"><span class="icon-noun-reply"></span>Ajouts</li>
+                    <li class="<?php if(isset($_GET["tab"]) && $_GET["tab"] != '3'){ echo 'selected';} ?>" data-section="sec-add"><span class="icon-noun-reply"></span>Ajouts</li>
                     <li data-section="sec-aime"><span class="icon-noun-like"></span>J'aime</li>
-                    <?php if($own){ ?>
+                    <?php if(isset($own) && $own){ ?>
                     <a href="/settings/<?= $_SESSION["pseudo"]; ?>">
-                        <li class="<?php if($_GET["tab"] == '3'){ echo 'selected';} ?>" data-section="sec-"><span class="icon-noun-settings"></span>Paramètres</li>
+                        <li class="<?php if(isset($_GET["tab"]) && $_GET["tab"] == '3'){ echo 'selected';} ?>" data-section="sec-"><span class="icon-noun-settings"></span>Paramètres</li>
                     </a>
                     <?php } ?>
                 </ul>
@@ -131,7 +131,7 @@ port this file to another platform without the owner's written consent. -->
             </section>
 
             <!-- if user is connected -->
-            <?php if($own){ ?>
+            <?php if(isset($own) && $own){ ?>
             <section id="sec-param" class="<?php if($_GET["tab"] == '3'){ echo 'selected';} ?>">
                 <ul class="list-slide">
                     <li>
